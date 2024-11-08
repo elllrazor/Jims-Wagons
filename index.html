@@ -29,12 +29,13 @@
             height: auto;
             border: 3px solid #ffd700; /* Gold border around image */
         }
-        .about {
+        .about, .wagons, .order-form {
             margin-top: 20px;
             padding: 20px;
             background-color: #fff;
             border-radius: 10px;
             border: 1px solid #006400; /* Dark green border */
+            text-align: left;
         }
         footer {
             background-color: #333;
@@ -50,13 +51,37 @@
         <h1>Jim's Wagons</h1>
         <p>Handcrafted Wagons for Gypsy Travelers</p>
     </header>
+
     <div class="main-content">
         <img src="wagon-image.jpg" alt="Beautiful gypsy wagon">
+        
         <div class="about">
-            <h2>Welcome to Our Craft</h2>
-            <p>At Jim's Wagons, we take pride in creating authentic, handcrafted wagons. Each wagon is made with the finest materials, honoring traditional craftsmanship.</p>
+            <h2>About Jim and His Craft</h2>
+            <p>Jim, a nearly 70-year-old craftsman and bricklayer, has been building beautiful, handcrafted gypsy wagons for over 10 years. Growing up, Jim’s father was a Gypsy, and creating these wagons brings him closer to his roots and family heritage. With each wagon he builds, Jim pours in his passion, skill, and a lifetime of experience. Every wagon is a tribute to the traditions of his past and the joy of working with his hands.</p>
+        </div>
+
+        <div class="wagons">
+            <h2>Our Wagons</h2>
+            <p>At Jim's Wagons, we offer both custom-built gypsy wagons and a selection of finished wagons. Each wagon can be tailored to your specifications, including size, color, and materials. Whether you're looking for a decorative piece or a fully functional wagon, Jim’s dedication to quality craftsmanship ensures that each wagon is built to last.</p>
+        </div>
+
+        <div class="order-form">
+            <h2>Order Your Wagon</h2>
+            <form action="https://formsubmit.co/YOUR_EMAIL" method="POST">
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" placeholder="Tell us about your ideal wagon!"></textarea><br><br>
+                
+                <button type="submit">Send Inquiry</button>
+            </form>
         </div>
     </div>
+
     <footer>
         <p>Contact Us | Privacy Policy | Terms of Service</p>
     </footer>
